@@ -15,15 +15,36 @@ O programa utiliza 3 bibliotecas padrão, sendo elas:
 
 A função led, tem como objetivo criar um caractere contendo um espaço, colori-lo e printa-lo.
 
-Protótipo:
-	led(char color[3]);
+Protótipo:<br>
+&emsp;&emsp;led(char color[3]);
 	
-onde:
-	color é um cor ANSII.
+onde:<br>
+&emsp;&emsp;char color[3] é uma cor ANSII.
 
 ## Função: limpar
 
 A função limpar limpa o terminal, usando system("clear") para sistema Unix e system("cls") para Windows.
 
-Protótipo:
-       limpar();
+Protótipo:<br>
+&emsp;&emsp;limpar();
+
+## Função: tabulacao_vertical
+
+Esta função imprime uma sequência de quebras de linhas, de acordo com tamanho. Ela é usada para que o saída seja impressa mais abaixo no terminal.
+
+Protótipo: <br>
+&emsp;&emsp;tabulacao_vertical(int tamanho);
+
+onde: <br>
+&emsp;&emsp; int tamanho é a quantidade de \n que será impresso na saída.
+
+## Função: tabulacao_horizontal
+
+Esta função imprime uma sequência de espaços, de acordo com tamanho. Ela é usada para que a próxima saída seja impressa mais a direita no terminal.
+
+Protótipo: <br>
+&emsp;&emsp;tabulacao_horizontal(int tamanho);
+
+onde: <br>
+&emsp;&emsp; int tamanho é a quantidade de ' ' que será impresso na saída.
+
