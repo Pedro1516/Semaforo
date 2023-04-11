@@ -20,7 +20,7 @@ Protótipo:<br>
 void led(char color[3]);
 ```	
 onde:<br>
-&emsp;&emsp;`char color[3]` é uma cor ANSII.
+&emsp;&emsp;`char color[3]` é uma cor ANSI.
 
 ## Função: limpar
 
@@ -59,8 +59,43 @@ Protótipo: <br>
 void montar_led(char color[3], int line, int column, int tab_h, int tab_v)
 ```
 onde:<br>
-&emsp;&emsp; `char color[3]` é um código de cor ANSII.<br>
+&emsp;&emsp; `char color[3]` é um código de cor ANSI.<br>
 &emsp;&emsp; `int line` é a quantidade de linhas que serão pintadas, sendo que: a linha começa a ser pintada após o tab_h e termina no column.<br>
 &emsp;&emsp; `int column` representa a quantidade de colunas a serem pintadas. O par line e column forma um pixel.<br>
 &emsp;&emsp; `int tab_h` é o espaçamento horizontal.<br>
 &emsp;&emsp; `int tab_v` é o espaçamento vertical. <br>
+
+
+## Código de cores de fundo ANSI
+
+
+| Código |	Cor         |
+|--------|------------------|
+| 40     | Preto (Black)    |
+| 41     | Vermelho (Red)   |
+| 42     | Verde (Green)    |
+| 43	 | Amarelo (Yellow) |
+| 44	 | Azul (Blue)      |
+| 45	 | Magenta (Magenta)|
+| 46     | Ciano (Cyan)     |
+| 47     | Branco (White)   |
+
+## Compilando e executando
+
+Para compilar o programa em um sistema Unix, abra o terminal na pasta e digite o seguinte comando:
+```shell
+gcc -o semaforo main.c
+```
+Para executar o programa, digite o seguinte comando:
+```shell
+./semaforo
+```
+
+Para compilar o programa em um Sistema Operacional Windows, abra o prompt e digite o seguinte comando:
+```shell
+gcc -o semafaro main.c
+```
+Para executar, use:
+```shell 
+semaforo.exe
+```
