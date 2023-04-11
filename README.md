@@ -9,7 +9,7 @@ Sumário:
   - [Função: montar_led](#montar_led)
 - [Tabela ANSI](#tabelaAnsi)
 - [Compilando e Executando](#compilandoeexecutando)
-  -[Ambiente Unix](#unix)
+  - [Ambiente Unix](#unix)
   - [Ambiente Windows](#windows)
 - [Agradecimentos](#obrigado)
 
