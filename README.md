@@ -99,3 +99,12 @@ Para executar, use:
 ```shell 
 semaforo.exe
 ```
+
+## Agradecimentos
+Obrigado por ler até aqui! Esse programa foi feito com o intuito de aprender estruturas básicas de C e formatação do terminal. Fique a vontade para criar forks e enviar issues.<br>
+
+#### Linguagens utilizadas 
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+</div>
