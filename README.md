@@ -8,7 +8,7 @@ Sumário:
   - [Função: tabulacao_horizontal](#tab_h)
   - [Função: montar_led](#montar_led)
 - [Tabela ANSI](#tabelaAnsi)
-- [Compilando e Executando](#compilandoeexecutando)
+- [Compilando e Executando](#compeexec)
   - [Ambiente Unix](#unix)
   - [Ambiente Windows](#windows)
 - [Agradecimentos](#obrigado)
@@ -101,7 +101,7 @@ onde:<br>
 | 46     | Ciano (Cyan)     |
 | 47     | Branco (White)   |
 
-<a name="compilandoeexexutando"></a>
+<a name="compeexec"></a>
 ## Compilando e executando
 
 <a name="unix"></a>
