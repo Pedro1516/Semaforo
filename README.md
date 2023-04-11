@@ -1,7 +1,23 @@
+
+
+Sumário:
+- [Funções](#funcoes)
+  - [Função: led](#led)
+  - [Função: limpar](#limpar)
+  - [Função: tabulacao_vertical](#tab_v)
+  - [Função: tabulacao_horizontal](#tab_h)
+  - [Função: montar_led](#montar_led)
+- [Tabela ANSI](#tabelaAnsi)
+- [Compilando e Executando](#compilandoeexecutando)
+  -[Ambiente Unix](#unix)
+  - [Ambiente Windows](#windows)
+- [Agradecimentos](#obrigado)
+
 # Semáforo
 
 Este programa tem como principal objetivo desenhar na tela pixels coloridos que mudam de cor a cada segundo, sendo também possível controlar o tempo de alternância das cores no código fonte. O exemplo utilizado no programa tenta imitar um tipo simplificado de semáforo.
 
+<a name="funcoes"></a>
 ## Funções
 
 O programa utiliza 3 bibliotecas padrão, sendo elas: 
@@ -10,7 +26,7 @@ O programa utiliza 3 bibliotecas padrão, sendo elas:
 - Windows: <b>Ela só é incluída caso o sistema operacional seja Windows.</b> A função desta lib que é utilizada é a Sleep(), utilizada para esperar x segundos
 - unistd: <b>Ela só é incluída caso o sistema operacional seja Unix.</b> A função desta lib que é utilizada é a sleep(), utilizada para esperar x segundos
 
-
+<a name="led"></a>
 ## Função: led
 
 A função led, tem como objetivo criar um caractere contendo um espaço, colori-lo e printa-lo.
@@ -22,6 +38,7 @@ void led(char color[3]);
 onde:<br>
 &emsp;&emsp;`char color[3]` é uma cor ANSI.
 
+<a name="limpar"></a>
 ## Função: limpar
 
 A função limpar limpa o terminal, usando system("clear") para sistema Unix e system("cls") para Windows.
@@ -30,6 +47,8 @@ Protótipo:<br>
 ```C
 void limpar();
 ```
+
+<a name="tab_v"></a>
 ## Função: tabulacao_vertical
 
 Esta função imprime uma sequência de quebras de linhas, de acordo com tamanho. Ela é usada para que o saída seja impressa mais abaixo no terminal.
@@ -41,6 +60,7 @@ void tabulacao_vertical(int tamanho);
 onde: <br>
 &emsp;&emsp; `int tamanho` é a quantidade de \n que será impresso na saída.
 
+<a name="tab_h"></a>
 ## Função: tabulacao_horizontal
 
 Esta função imprime uma sequência de espaços, de acordo com tamanho. Ela é usada para que a próxima saída seja impressa mais a direita no terminal.
@@ -52,6 +72,7 @@ void tabulacao_horizontal(int tamanho);
 onde: <br>
 &emsp;&emsp; `int tamanho` é a quantidade de ' ' que será impresso na saída.
 
+<a name="montar_led"></a>
 ## Função: montar_led
 
 Protótipo: <br>
@@ -65,7 +86,7 @@ onde:<br>
 &emsp;&emsp; `int tab_h` é o espaçamento horizontal.<br>
 &emsp;&emsp; `int tab_v` é o espaçamento vertical. <br>
 
-
+<a name="tabelaAnsi"></a>
 ## Código de cores de fundo ANSI
 
 
@@ -80,8 +101,10 @@ onde:<br>
 | 46     | Ciano (Cyan)     |
 | 47     | Branco (White)   |
 
+<a name="compilandoeexexutando"></a>
 ## Compilando e executando
 
+<a name="unix"></a>
 Para compilar o programa em um sistema Unix, abra o terminal na pasta e digite o seguinte comando:
 ```shell
 gcc -o semaforo main.c
@@ -90,7 +113,7 @@ Para executar o programa, digite o seguinte comando:
 ```shell
 ./semaforo
 ```
-
+<a name="windows"></a>
 Para compilar o programa em um Sistema Operacional Windows, abra o prompt e digite o seguinte comando:
 ```shell
 gcc -o semafaro main.c
@@ -99,7 +122,7 @@ Para executar, use:
 ```shell 
 semaforo.exe
 ```
-
+<a name="obrigado"></a>
 ## Agradecimentos
 Obrigado por ler até aqui! Esse programa foi feito com o intuito de aprender estruturas básicas de C e formatação do terminal. Fique a vontade para criar forks e enviar issues.<br>
 
