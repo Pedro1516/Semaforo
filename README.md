@@ -105,6 +105,7 @@ onde:<br>
 ## Compilando e executando
 
 <a name="unix"></a>
+### Unix
 Para compilar o programa em um sistema Unix, abra o terminal na pasta e digite o seguinte comando:
 ```shell
 gcc -o semaforo main.c
@@ -114,6 +115,7 @@ Para executar o programa, digite o seguinte comando:
 ./semaforo
 ```
 <a name="windows"></a>
+### Windows 
 Para compilar o programa em um Sistema Operacional Windows, abra o prompt e digite o seguinte comando:
 ```shell
 gcc -o semafaro main.c
