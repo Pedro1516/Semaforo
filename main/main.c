@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
 	#include <Windows.h>
 #else
 	#include <unistd.h>
@@ -10,7 +10,7 @@
 
 void led(char color[3]);
 void tabulacao_horizontal(int tamanho);
-void montar_led(char color[3], int line, int column, int tab_h, tab_v);
+void montar_led(char color[3], int line, int column, int tab_h, int tab_v);
 void tabulacao_vertical(int tamanho);
 void limpar();
 
